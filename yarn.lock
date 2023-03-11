@@ -17761,14 +17761,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pre-push@npm:^0.1.1":
-  version: 0.1.2
-  resolution: "pre-push@npm:0.1.2"
+"pre-push@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "pre-push@npm:0.1.4"
   dependencies:
     cross-spawn: ^5.0.1
     spawn-sync: ^1.0.15
     which: 1.2.x
-  checksum: 646a30767fc3edf73bf06bac6d32275714c196ebcda9236c5890f4b9e401f63be5abbfd1e2ac4af80377ce6f0486e7acd580e3a499a3cd9f4abf129abdab63e0
+  checksum: f2a8018fe73387c314a7d12ce0e4a1949cd49ddb67997b312304d5f204590c06209cfd48592c7a26bc20f089601c0afdd655d133c76cce40de09be1cbad40dad
   languageName: node
   linkType: hard
 
@@ -18813,7 +18813,7 @@ __metadata:
     node-fetch: ^2.6.1
     node-sass: ^4.9.3
     npm-run-all: ^4.1.3
-    pre-push: ^0.1.1
+    pre-push: ^0.1.4
     prettier: 1.17.0
     pretty-quick: ^1.10.0
     prop-types: ^15.6.2
