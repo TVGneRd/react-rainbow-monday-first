@@ -19,11 +19,7 @@ nbproject
 coverage
 .env
 package-lock.json
-components
-esm
 propTypes
-libs
-styles
 !/library/pages/components
 !/src/components
 !/src/libs
