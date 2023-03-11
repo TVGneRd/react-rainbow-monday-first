@@ -36,3 +36,4 @@ test-results
 *.css.map
 .editorconfig
 .vscode
+.yarn
