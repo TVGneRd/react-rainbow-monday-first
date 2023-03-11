@@ -1,20 +1,13 @@
-import React from 'react';
 import { PropTypes } from 'prop-types';
+import React from 'react';
+import StyledAbbrHeader from './styled/abbrHeader';
 import StyledHeaderDays from './styled/headerDays';
 import { getFormattedDayName } from '../Calendar/helpers';
-import StyledAbbrHeader from './styled/abbrHeader';
 
 export default function DayOfWeek({ locale }) {
     return (
         <thead>
             <tr>
-                <StyledHeaderDays scope="col">
-                    <StyledAbbrHeader
-                        title={getFormattedDayName(new Date(2019, 9, 27), 'long', locale)}
-                    >
-                        {getFormattedDayName(new Date(2019, 9, 27), 'short', locale)}
-                    </StyledAbbrHeader>
-                </StyledHeaderDays>
                 <StyledHeaderDays scope="col">
                     <StyledAbbrHeader
                         title={getFormattedDayName(new Date(2019, 9, 28), 'long', locale)}
@@ -55,6 +48,13 @@ export default function DayOfWeek({ locale }) {
                         title={getFormattedDayName(new Date(2019, 10, 2), 'long', locale)}
                     >
                         {getFormattedDayName(new Date(2019, 10, 2), 'short', locale)}
+                    </StyledAbbrHeader>
+                </StyledHeaderDays>
+                <StyledHeaderDays scope="col">
+                    <StyledAbbrHeader
+                        title={getFormattedDayName(new Date(2019, 9, 27), 'long', locale)}
+                    >
+                        {getFormattedDayName(new Date(2019, 9, 27), 'short', locale)}
                     </StyledAbbrHeader>
                 </StyledHeaderDays>
             </tr>
