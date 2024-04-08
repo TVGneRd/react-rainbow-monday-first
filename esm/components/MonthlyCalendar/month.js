@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
+import React, { useMemo } from 'react';
 import { addDays, getLastDayMonth } from '../Calendar/helpers';
 import Week from './week';
 export default function Month(props) {
@@ -19,7 +19,7 @@ export default function Month(props) {
 
     function Weeks() {
         var dayOfWeek = date.getDay();
-        var daysAfter = 6 - dayOfWeek;
+        var daysAfter = 7 - dayOfWeek;
 
         while (date <= lastDayMonth || addDays(date, -dayOfWeek) <= lastDayMonth) {
             var startDate = addDays(date, -dayOfWeek);

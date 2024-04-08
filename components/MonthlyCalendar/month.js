@@ -9,9 +9,9 @@ Object.defineProperty(exports, '__esModule', {
 });
 exports['default'] = Month;
 
-var _react = _interopRequireWildcard(require('react'));
-
 var _propTypes = _interopRequireDefault(require('prop-types'));
+
+var _react = _interopRequireWildcard(require('react'));
 
 var _helpers = require('../Calendar/helpers');
 
@@ -73,7 +73,7 @@ function Month(props) {
 
     function Weeks() {
         var dayOfWeek = date.getDay();
-        var daysAfter = 6 - dayOfWeek;
+        var daysAfter = 7 - dayOfWeek;
 
         while (date <= lastDayMonth || (0, _helpers.addDays)(date, -dayOfWeek) <= lastDayMonth) {
             var startDate = (0, _helpers.addDays)(date, -dayOfWeek);
