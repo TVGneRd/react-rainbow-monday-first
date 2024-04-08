@@ -1,9 +1,9 @@
 var getValue = function getValue(value) {
-    if (isNaN(value)) {
-        return 0;
-    }
+  if (isNaN(value)) {
+    return 0;
+  }
 
-    return value;
+  return value;
 };
 
 export default getValue;

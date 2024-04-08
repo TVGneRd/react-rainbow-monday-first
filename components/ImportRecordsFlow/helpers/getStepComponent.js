@@ -1,32 +1,32 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getStepComponent;
+exports["default"] = getStepComponent;
 
-var _stepOne = _interopRequireDefault(require('../stepOne'));
+var _stepOne = _interopRequireDefault(require("../stepOne"));
 
-var _stepTwo = _interopRequireDefault(require('../stepTwo'));
+var _stepTwo = _interopRequireDefault(require("../stepTwo"));
 
-var _stepThree = _interopRequireDefault(require('../stepThree'));
+var _stepThree = _interopRequireDefault(require("../stepThree"));
 
-var _stepFour = _interopRequireDefault(require('../stepFour'));
+var _stepFour = _interopRequireDefault(require("../stepFour"));
 
 var defaultStepsMap = {
-    'step-1': _stepOne['default'],
-    'step-2': _stepTwo['default'],
-    'step-3': _stepThree['default'],
-    'step-4': _stepFour['default'],
+  'step-1': _stepOne["default"],
+  'step-2': _stepTwo["default"],
+  'step-3': _stepThree["default"],
+  'step-4': _stepFour["default"]
 };
 
 function EmptyComponent() {
-    return null;
+  return null;
 }
 
 function getStepComponent(_ref) {
-    var currentStep = _ref.currentStep;
-    return defaultStepsMap[currentStep] || EmptyComponent;
+  var currentStep = _ref.currentStep;
+  return defaultStepsMap[currentStep] || EmptyComponent;
 }

@@ -1,4 +1,4 @@
 import compareDates from './compareDates';
 export default function isDateBelowLimit(date, limit) {
-    return compareDates(date, limit) < 0;
+  return compareDates(date, limit) < 0;
 }

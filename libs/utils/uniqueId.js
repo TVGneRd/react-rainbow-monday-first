@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = uniqueId;
+exports["default"] = uniqueId;
 var idCounter = 0;
 
 function uniqueId(prefix) {
-    idCounter += 1;
-    return prefix ? ''.concat(prefix, '-').concat(idCounter) : String(idCounter);
+  idCounter += 1;
+  return prefix ? "".concat(prefix, "-").concat(idCounter) : String(idCounter);
 }

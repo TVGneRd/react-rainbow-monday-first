@@ -1,11 +1,11 @@
 import getValue from './getValue';
 
 var isMin = function isMin(number, step, min) {
-    if (getValue(Number(number)) - step < min) {
-        return true;
-    }
+  if (getValue(Number(number)) - step < min) {
+    return true;
+  }
 
-    return false;
+  return false;
 };
 
 export default isMin;

@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.UP_KEY = exports.TAB_KEY = exports.SPACE_KEY = exports.RIGHT_KEY = exports.PAGEUP_KEY = exports.PAGEDN_KEY = exports.LEFT_KEY = exports.HOME_KEY = exports.ESCAPE_KEY = exports.ENTER_KEY = exports.END_KEY = exports.DOWN_KEY = exports.DELETE_KEY = void 0;
 var LEFT_KEY = 37;

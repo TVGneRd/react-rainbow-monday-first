@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getWidthStyle;
+exports["default"] = getWidthStyle;
 
 function getWidthStyle(pixels) {
-    return pixels > 0 ? 'width: '.concat(pixels, 'px') : '';
+  return pixels > 0 ? "width: ".concat(pixels, "px") : '';
 }

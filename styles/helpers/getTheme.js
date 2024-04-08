@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getTheme;
+exports["default"] = getTheme;
 
-var _defaultTheme = _interopRequireDefault(require('../defaultTheme'));
+var _defaultTheme = _interopRequireDefault(require("../defaultTheme"));
 
 function getTheme(props) {
-    return props.theme.rainbow || _defaultTheme['default'];
+  return props.theme.rainbow || _defaultTheme["default"];
 }

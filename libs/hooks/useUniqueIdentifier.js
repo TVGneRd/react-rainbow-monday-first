@@ -1,19 +1,16 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = useUniqueIdentifier;
+exports["default"] = useUniqueIdentifier;
 
-var _react = require('react');
+var _react = require("react");
 
-var _utils = require('../utils');
+var _utils = require("../utils");
 
 function useUniqueIdentifier(prefix) {
-    return (0, _react.useMemo)(
-        function() {
-            return (0, _utils.uniqueId)(prefix);
-        },
-        [prefix],
-    );
+  return (0, _react.useMemo)(function () {
+    return (0, _utils.uniqueId)(prefix);
+  }, [prefix]);
 }

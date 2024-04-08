@@ -1,18 +1,18 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getError;
+exports["default"] = getError;
 
 function getError(error) {
-    if (error) {
-        return {
-            code: error.code,
-            type: error.type,
-            message: error.message,
-        };
-    }
+  if (error) {
+    return {
+      code: error.code,
+      type: error.type,
+      message: error.message
+    };
+  }
 
-    return undefined;
+  return undefined;
 }

@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isScrollPositionAtMenuBottom;
+exports["default"] = isScrollPositionAtMenuBottom;
 
 function isScrollPositionAtMenuBottom(menuRef) {
-    var scrollHeight = menuRef.scrollHeight,
-        scrollTop = menuRef.scrollTop,
-        clientHeight = menuRef.clientHeight;
-    return scrollHeight - scrollTop === clientHeight;
+  var scrollHeight = menuRef.scrollHeight,
+      scrollTop = menuRef.scrollTop,
+      clientHeight = menuRef.clientHeight;
+  return scrollHeight - scrollTop === clientHeight;
 }

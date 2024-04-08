@@ -1,11 +1,11 @@
 export default function isOptionVisible(elem, container) {
-    var _elem$getBoundingClie = elem.getBoundingClientRect(),
-        elTop = _elem$getBoundingClie.top,
-        elBottom = _elem$getBoundingClie.bottom;
+  var _elem$getBoundingClie = elem.getBoundingClientRect(),
+      elTop = _elem$getBoundingClie.top,
+      elBottom = _elem$getBoundingClie.bottom;
 
-    var _container$getBoundin = container.getBoundingClientRect(),
-        containerTop = _container$getBoundin.top,
-        containerBottom = _container$getBoundin.bottom;
+  var _container$getBoundin = container.getBoundingClientRect(),
+      containerTop = _container$getBoundin.top,
+      containerBottom = _container$getBoundin.bottom;
 
-    return elTop >= containerTop && elBottom <= containerBottom;
+  return elTop >= containerTop && elBottom <= containerBottom;
 }

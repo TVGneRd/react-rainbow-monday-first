@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.COLOR_YELLOW_1 = exports.COLOR_WHITE = exports.COLOR_WARNING_LIGHT = exports.COLOR_WARNING_DARK = exports.COLOR_WARNING = exports.COLOR_SUCCESS_LIGHT = exports.COLOR_SUCCESS_ACTIVE = exports.COLOR_SUCCESS = exports.COLOR_PURPLE = exports.COLOR_GRAY_TRANSPARENT_3 = exports.COLOR_GRAY_TRANSPARENT_2 = exports.COLOR_GRAY_TRANSPARENT_1 = exports.COLOR_GRAY_DARK_TRANSPARENT = exports.COLOR_GRAY_4 = exports.COLOR_GRAY_3 = exports.COLOR_GRAY_2 = exports.COLOR_GRAY_1 = exports.COLOR_ERROR_ACTIVE = exports.COLOR_ERROR = exports.COLOR_DARK_1 = exports.COLOR_BRAND_LIGHT = exports.COLOR_BRAND_ACTIVE = exports.COLOR_BRAND_2 = exports.COLOR_BRAND = void 0;
 var COLOR_WHITE = '#fff';

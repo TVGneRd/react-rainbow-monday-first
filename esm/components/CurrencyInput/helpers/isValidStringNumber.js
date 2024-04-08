@@ -1,3 +1,3 @@
 export default function isValidStringNumber(str) {
-    return str === '-' || !Number.isNaN(Number(str));
+  return str === '-' || !Number.isNaN(Number(str));
 }

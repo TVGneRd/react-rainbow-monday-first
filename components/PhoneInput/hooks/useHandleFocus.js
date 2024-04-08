@@ -1,29 +1,26 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = useHandleFocus;
+exports["default"] = useHandleFocus;
 
-var _react = require('react');
+var _react = require("react");
 
 function useHandleFocus(_ref) {
-    var focusIndex = _ref.focusIndex,
-        onFocus = _ref.onFocus,
-        setFocusIndex = _ref.setFocusIndex,
-        value = _ref.value;
-    return (0, _react.useCallback)(
-        function(event, index) {
-            if ((index === 0 && focusIndex === 1) || index === focusIndex) {
-                return;
-            }
+  var focusIndex = _ref.focusIndex,
+      onFocus = _ref.onFocus,
+      setFocusIndex = _ref.setFocusIndex,
+      value = _ref.value;
+  return (0, _react.useCallback)(function (event, index) {
+    if (index === 0 && focusIndex === 1 || index === focusIndex) {
+      return;
+    }
 
-            if (focusIndex === -1) {
-                onFocus(value);
-            }
+    if (focusIndex === -1) {
+      onFocus(value);
+    }
 
-            setFocusIndex(index);
-        },
-        [focusIndex, onFocus, setFocusIndex, value],
-    );
+    setFocusIndex(index);
+  }, [focusIndex, onFocus, setFocusIndex, value]);
 }

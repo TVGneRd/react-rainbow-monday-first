@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = addDays;
+exports["default"] = addDays;
 
 function addDays(date, days) {
-    var ret = new Date(date);
-    ret.setDate(ret.getDate() + days);
-    return new Date(ret);
+  var ret = new Date(date);
+  ret.setDate(ret.getDate() + days);
+  return new Date(ret);
 }

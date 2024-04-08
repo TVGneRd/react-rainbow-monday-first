@@ -1,3 +1,3 @@
 export default function hasNoFlexibleColumns(widthsMeta) {
-    return widthsMeta.totalFlexibleColumns === 0;
+  return widthsMeta.totalFlexibleColumns === 0;
 }

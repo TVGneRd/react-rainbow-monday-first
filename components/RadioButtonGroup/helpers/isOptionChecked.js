@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isOptionChecked;
+exports["default"] = isOptionChecked;
 
 function isOptionChecked(option, currentValue) {
-    if (!currentValue) {
-        return false;
-    }
+  if (!currentValue) {
+    return false;
+  }
 
-    return !option.disabled && option.value === currentValue;
+  return !option.disabled && option.value === currentValue;
 }

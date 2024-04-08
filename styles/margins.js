@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.MARGIN_X_SMALL = exports.MARGIN_X_LARGE = exports.MARGIN_XX_SMALL = exports.MARGIN_XX_LARGE = exports.MARGIN_SMALL = exports.MARGIN_MEDIUM = exports.MARGIN_LARGE = void 0;
 var MARGIN_XX_SMALL = '0.25rem';

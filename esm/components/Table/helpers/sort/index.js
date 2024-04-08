@@ -1,13 +1,13 @@
 export function getNextSortDirection(field, sortedBy) {
-    var sortDirection = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'asc';
+  var sortDirection = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'asc';
 
-    if (field && field === sortedBy) {
-        if (sortDirection === 'asc') {
-            return 'desc';
-        }
-
-        return 'asc';
+  if (field && field === sortedBy) {
+    if (sortDirection === 'asc') {
+      return 'desc';
     }
 
-    return sortDirection;
+    return 'asc';
+  }
+
+  return sortDirection;
 }

@@ -1,9 +1,9 @@
 var getPageBorderRadius = function getPageBorderRadius(pages) {
-    if (pages === 1) {
-        return '100px';
-    }
+  if (pages === 1) {
+    return '100px';
+  }
 
-    return '0 100px 100px 0';
+  return '0 100px 100px 0';
 };
 
 export default getPageBorderRadius;

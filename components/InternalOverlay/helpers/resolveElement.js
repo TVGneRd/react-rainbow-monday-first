@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = resolveElement;
+exports["default"] = resolveElement;
 
 function resolveElement(ref) {
-    if (typeof ref === 'function') {
-        var ret = ref();
-        return ret && ret.current;
-    }
+  if (typeof ref === 'function') {
+    var ret = ref();
+    return ret && ret.current;
+  }
 
-    return ref && ref.current;
+  return ref && ref.current;
 }

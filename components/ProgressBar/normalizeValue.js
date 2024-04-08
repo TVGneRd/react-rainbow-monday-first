@@ -1,18 +1,18 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = normalizeValue;
+exports["default"] = normalizeValue;
 
 function normalizeValue(value) {
-    if (value < 0) {
-        return 0;
-    }
+  if (value < 0) {
+    return 0;
+  }
 
-    if (value > 100) {
-        return 100;
-    }
+  if (value > 100) {
+    return 100;
+  }
 
-    return value;
+  return value;
 }

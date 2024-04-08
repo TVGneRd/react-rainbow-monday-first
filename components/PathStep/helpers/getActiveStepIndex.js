@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getActiveStepIndex;
+exports["default"] = getActiveStepIndex;
 
 function getActiveStepIndex(params) {
-    var hoveredIndex = params.hoveredIndex,
-        selectedIndex = params.selectedIndex;
-    if (hoveredIndex !== -1) return hoveredIndex;
-    return selectedIndex;
+  var hoveredIndex = params.hoveredIndex,
+      selectedIndex = params.selectedIndex;
+  if (hoveredIndex !== -1) return hoveredIndex;
+  return selectedIndex;
 }

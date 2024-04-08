@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = setFocus;
+exports["default"] = setFocus;
 
 function setFocus(ref) {
-    if (ref && ref.current) {
-        ref.current.focus();
-    }
+  if (ref && ref.current) {
+    ref.current.focus();
+  }
 }

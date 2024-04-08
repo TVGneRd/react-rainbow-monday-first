@@ -1,26 +1,23 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = useErrorMessageId;
+exports["default"] = useErrorMessageId;
 
-var _react = require('react');
+var _react = require("react");
 
-var _useUniqueIdentifier = _interopRequireDefault(require('./useUniqueIdentifier'));
+var _useUniqueIdentifier = _interopRequireDefault(require("./useUniqueIdentifier"));
 
 function useErrorMessageId(error) {
-    var errorMessageId = (0, _useUniqueIdentifier['default'])('error-message');
-    return (0, _react.useMemo)(
-        function() {
-            if (error) {
-                return errorMessageId;
-            }
+  var errorMessageId = (0, _useUniqueIdentifier["default"])('error-message');
+  return (0, _react.useMemo)(function () {
+    if (error) {
+      return errorMessageId;
+    }
 
-            return undefined;
-        },
-        [errorMessageId, error],
-    );
+    return undefined;
+  }, [errorMessageId, error]);
 }

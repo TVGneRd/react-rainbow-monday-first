@@ -1,24 +1,24 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getValueNames;
+exports["default"] = getValueNames;
 
 function getValueNames(value) {
-    if (Array.isArray(value)) {
-        return value.reduce(function(seed, item) {
-            if (item.name) {
-                seed.push(item.name);
-            }
+  if (Array.isArray(value)) {
+    return value.reduce(function (seed, item) {
+      if (item.name) {
+        seed.push(item.name);
+      }
 
-            return seed;
-        }, []);
-    }
+      return seed;
+    }, []);
+  }
 
-    if (value && value.name) {
-        return [value.name];
-    }
+  if (value && value.name) {
+    return [value.name];
+  }
 
-    return [];
+  return [];
 }

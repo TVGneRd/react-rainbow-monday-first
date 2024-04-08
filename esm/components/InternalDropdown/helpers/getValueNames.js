@@ -1,17 +1,17 @@
 export default function getValueNames(value) {
-    if (Array.isArray(value)) {
-        return value.reduce(function(seed, item) {
-            if (item.name) {
-                seed.push(item.name);
-            }
+  if (Array.isArray(value)) {
+    return value.reduce(function (seed, item) {
+      if (item.name) {
+        seed.push(item.name);
+      }
 
-            return seed;
-        }, []);
-    }
+      return seed;
+    }, []);
+  }
 
-    if (value && value.name) {
-        return [value.name];
-    }
+  if (value && value.name) {
+    return [value.name];
+  }
 
-    return [];
+  return [];
 }

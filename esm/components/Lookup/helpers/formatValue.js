@@ -1,8 +1,8 @@
-import _typeof from '@babel/runtime/helpers/typeof';
+import _typeof from "@babel/runtime/helpers/typeof";
 export default function formatValue(value) {
-    if (_typeof(value) === 'object' && value !== null && !Array.isArray(value)) {
-        return value;
-    }
+  if (_typeof(value) === 'object' && value !== null && !Array.isArray(value)) {
+    return value;
+  }
 
-    return {};
+  return {};
 }

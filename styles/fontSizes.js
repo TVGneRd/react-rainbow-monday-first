@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.FONT_SIZE_TEXT_X_SMALL = exports.FONT_SIZE_TEXT_SMALL = exports.FONT_SIZE_TEXT_MEDIUM = exports.FONT_SIZE_TEXT_LARGE = exports.FONT_SIZE_HEADING_X_LARGE = exports.FONT_SIZE_HEADING_SMALL = exports.FONT_SIZE_HEADING_MEDIUM = exports.FONT_SIZE_HEADING_LARGE = void 0;
 var FONT_SIZE_HEADING_SMALL = '1rem';

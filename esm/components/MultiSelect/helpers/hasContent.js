@@ -1,12 +1,12 @@
-import _typeof from '@babel/runtime/helpers/typeof';
+import _typeof from "@babel/runtime/helpers/typeof";
 export default function hasContent(value) {
-    if (!value) {
-        return false;
-    }
+  if (!value) {
+    return false;
+  }
 
-    if (Array.isArray(value)) {
-        return value.length > 0;
-    }
+  if (Array.isArray(value)) {
+    return value.length > 0;
+  }
 
-    return _typeof(value) === 'object';
+  return _typeof(value) === 'object';
 }

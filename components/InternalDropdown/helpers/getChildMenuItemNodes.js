@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getChildMenuItemNodes;
+exports["default"] = getChildMenuItemNodes;
 
 function getChildMenuItemNodes(ref) {
-    if (ref) {
-        return ref.querySelectorAll('div[role="option"]');
-    }
+  if (ref) {
+    return ref.querySelectorAll('div[role="option"]');
+  }
 
-    return [];
+  return [];
 }

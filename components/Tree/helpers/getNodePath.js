@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getNodePath;
+exports["default"] = getNodePath;
 
 function getNodePath(nodePath) {
-    return nodePath.join('.');
+  return nodePath.join('.');
 }

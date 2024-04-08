@@ -1,4 +1,4 @@
 import getBrightness from './getBrightness';
 export default function isDark(color) {
-    return getBrightness(color) < 128;
+  return getBrightness(color) < 128;
 }

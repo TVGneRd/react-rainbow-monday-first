@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isValidStringNumber;
+exports["default"] = isValidStringNumber;
 
 function isValidStringNumber(str) {
-    return str === '-' || !Number.isNaN(Number(str));
+  return str === '-' || !Number.isNaN(Number(str));
 }

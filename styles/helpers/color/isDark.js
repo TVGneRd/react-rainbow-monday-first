@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isDark;
+exports["default"] = isDark;
 
-var _getBrightness = _interopRequireDefault(require('./getBrightness'));
+var _getBrightness = _interopRequireDefault(require("./getBrightness"));
 
 function isDark(color) {
-    return (0, _getBrightness['default'])(color) < 128;
+  return (0, _getBrightness["default"])(color) < 128;
 }

@@ -1,27 +1,27 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getNormalizedOptions;
+exports["default"] = getNormalizedOptions;
 
 function getNormalizedOptions(options) {
-    var isArray = Array.isArray;
+  var isArray = Array.isArray;
 
-    if (isArray(options)) {
-        return options.reduce(function(arr, item) {
-            if (item.type === 'section') {
-                arr.push({
-                    label: item.label,
-                    type: 'header',
-                });
-                return arr.concat(isArray(item.options) ? item.options : []);
-            }
+  if (isArray(options)) {
+    return options.reduce(function (arr, item) {
+      if (item.type === 'section') {
+        arr.push({
+          label: item.label,
+          type: 'header'
+        });
+        return arr.concat(isArray(item.options) ? item.options : []);
+      }
 
-            arr.push(item);
-            return arr;
-        }, []);
-    }
+      arr.push(item);
+      return arr;
+    }, []);
+  }
 
-    return [];
+  return [];
 }

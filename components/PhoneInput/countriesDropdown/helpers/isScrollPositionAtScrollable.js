@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isScrollPositionAtScrollable;
+exports["default"] = isScrollPositionAtScrollable;
 
 function isScrollPositionAtScrollable(scrollable) {
-    var scrollHeight = scrollable.scrollHeight,
-        scrollTop = scrollable.scrollTop,
-        clientHeight = scrollable.clientHeight;
-    return scrollHeight - scrollTop === clientHeight;
+  var scrollHeight = scrollable.scrollHeight,
+      scrollTop = scrollable.scrollTop,
+      clientHeight = scrollable.clientHeight;
+  return scrollHeight - scrollTop === clientHeight;
 }

@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.ZINDEX_SPINNER = exports.ZINDEX_OVERLAY = exports.ZINDEX_MODAL = exports.ZINDEX_DRAWER = void 0;
 var ZINDEX_SPINNER = 9000;

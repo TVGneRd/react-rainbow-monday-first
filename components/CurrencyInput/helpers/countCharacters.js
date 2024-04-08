@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = countCharacters;
+exports["default"] = countCharacters;
 
 function countCharacters(str, _char) {
-    return str.split(_char).length - 1;
+  return str.split(_char).length - 1;
 }

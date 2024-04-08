@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = rgbaToRgb;
+exports["default"] = rgbaToRgb;
 
 function rgbaToRgb(color) {
-    if (color.substring(0, 4) !== 'rgba') {
-        return '';
-    }
+  if (color.substring(0, 4) !== 'rgba') {
+    return '';
+  }
 
-    var rgx = /^rgba\(((,?\s*\d+){3}).+$/;
-    return color.replace(rgx, 'rgb($1)');
+  var rgx = /^rgba\(((,?\s*\d+){3}).+$/;
+  return color.replace(rgx, 'rgb($1)');
 }

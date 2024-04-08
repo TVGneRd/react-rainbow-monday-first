@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isOptionSelected;
+exports["default"] = isOptionSelected;
 
 function isOptionSelected(values, option) {
-    if (values && Array.isArray(values)) {
-        return values.some(function(value) {
-            return value === option.value;
-        });
-    }
+  if (values && Array.isArray(values)) {
+    return values.some(function (value) {
+      return value === option.value;
+    });
+  }
 
-    return false;
+  return false;
 }

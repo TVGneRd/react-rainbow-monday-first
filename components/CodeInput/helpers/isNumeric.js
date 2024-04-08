@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isNumeric;
+exports["default"] = isNumeric;
 
 function isNumeric(value) {
-    if (value) {
-        return !isNaN(value);
-    }
+  if (value) {
+    return !isNaN(value);
+  }
 
-    return false;
+  return false;
 }

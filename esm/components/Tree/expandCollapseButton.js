@@ -7,45 +7,41 @@ import RightArrow from './icons/rightArrow';
 import DownArrow from './icons/downArrow';
 
 function getIcon(isExpanded) {
-    if (isExpanded) {
-        return React.createElement(DownArrow, null);
-    }
+  if (isExpanded) {
+    return React.createElement(DownArrow, null);
+  }
 
-    return React.createElement(RightArrow, null);
+  return React.createElement(RightArrow, null);
 }
 
 export default function ExpandCollapseButton(props) {
-    var hasChildren = props.hasChildren,
-        isExpanded = props.isExpanded,
-        isLoading = props.isLoading,
-        onClick = props.onClick;
+  var hasChildren = props.hasChildren,
+      isExpanded = props.isExpanded,
+      isLoading = props.isLoading,
+      onClick = props.onClick;
 
-    if (isLoading) {
-        return React.createElement(
-            SpinnerContainer,
-            null,
-            React.createElement(Spinner, {
-                variant: 'brand',
-                type: 'arc',
-                size: 'x-small',
-            }),
-        );
-    }
+  if (isLoading) {
+    return React.createElement(SpinnerContainer, null, React.createElement(Spinner, {
+      variant: "brand",
+      type: "arc",
+      size: "x-small"
+    }));
+  }
 
-    if (hasChildren) {
-        return React.createElement(Button, {
-            size: 'x-small',
-            icon: getIcon(isExpanded),
-            onClick: onClick,
-            tabIndex: -1,
-        });
-    }
+  if (hasChildren) {
+    return React.createElement(Button, {
+      size: "x-small",
+      icon: getIcon(isExpanded),
+      onClick: onClick,
+      tabIndex: -1
+    });
+  }
 
-    return null;
+  return null;
 }
 ExpandCollapseButton.propTypes = {
-    hasChildren: PropTypes.bool.isRequired,
-    isExpanded: PropTypes.bool.isRequired,
-    isLoading: PropTypes.bool.isRequired,
-    onClick: PropTypes.func.isRequired,
+  hasChildren: PropTypes.bool.isRequired,
+  isExpanded: PropTypes.bool.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired
 };

@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = normalizeInitials;
+exports["default"] = normalizeInitials;
 
 function normalizeInitials(initials) {
-    return initials.slice(0, 2);
+  return initials.slice(0, 2);
 }

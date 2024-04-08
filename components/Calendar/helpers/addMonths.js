@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = addMonths;
+exports["default"] = addMonths;
 
 function addMonths(date, months) {
-    var clone = new Date(date);
-    clone.setMonth(date.getMonth() + months);
-    return clone;
+  var clone = new Date(date);
+  clone.setMonth(date.getMonth() + months);
+  return clone;
 }

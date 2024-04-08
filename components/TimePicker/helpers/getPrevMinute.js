@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getPrevMinute;
+exports["default"] = getPrevMinute;
 
 function getPrevMinute(value) {
-    var number = Number(value);
+  var number = Number(value);
 
-    if (!value || number === 0) {
-        return '59';
-    }
+  if (!value || number === 0) {
+    return '59';
+  }
 
-    return String(number - 1);
+  return String(number - 1);
 }

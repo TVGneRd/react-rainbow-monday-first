@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isEmptyObject;
+exports["default"] = isEmptyObject;
 
 function isEmptyObject(obj) {
-    return obj !== undefined && Object.keys(obj).length === 0;
+  return obj !== undefined && Object.keys(obj).length === 0;
 }

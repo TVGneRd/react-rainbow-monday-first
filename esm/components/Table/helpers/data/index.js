@@ -1,7 +1,7 @@
 export function normalizeData(data) {
-    if (Array.isArray(data)) {
-        return data;
-    }
+  if (Array.isArray(data)) {
+    return data;
+  }
 
-    return [];
+  return [];
 }

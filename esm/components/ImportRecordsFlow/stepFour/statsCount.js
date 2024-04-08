@@ -7,42 +7,25 @@ import RenderIf from '../../RenderIf';
 import getPluralization from '../helpers/getPluralization';
 
 var getCardDescription = function getCardDescription(type, amount) {
-    var plural = type === 'success' ? '' : getPluralization(amount);
-    return ''
-        .concat(amount, ' ')
-        .concat(type === 'success' ? 'Successful' : 'Error')
-        .concat(plural);
+  var plural = type === 'success' ? '' : getPluralization(amount);
+  return "".concat(amount, " ").concat(type === 'success' ? 'Successful' : 'Error').concat(plural);
 };
 
 export default function StatsCount(props) {
-    var type = props.type,
-        amount = props.amount;
-    var description = getCardDescription(type, amount);
-    return React.createElement(
-        React.Fragment,
-        null,
-        React.createElement(
-            RenderIf,
-            {
-                isTrue: type === 'success',
-            },
-            React.createElement(CheckCircle, null),
-        ),
-        React.createElement(
-            RenderIf,
-            {
-                isTrue: type === 'error',
-            },
-            React.createElement(XCircle, null),
-        ),
-        React.createElement(StyledStatsCardDescription, null, description),
-    );
+  var type = props.type,
+      amount = props.amount;
+  var description = getCardDescription(type, amount);
+  return React.createElement(React.Fragment, null, React.createElement(RenderIf, {
+    isTrue: type === 'success'
+  }, React.createElement(CheckCircle, null)), React.createElement(RenderIf, {
+    isTrue: type === 'error'
+  }, React.createElement(XCircle, null)), React.createElement(StyledStatsCardDescription, null, description));
 }
 StatsCount.propTypes = {
-    type: PropTypes.oneOf(['success', 'error']),
-    amount: PropTypes.number,
+  type: PropTypes.oneOf(['success', 'error']),
+  amount: PropTypes.number
 };
 StatsCount.defaultProps = {
-    type: 'success',
-    amount: 0,
+  type: 'success',
+  amount: 0
 };

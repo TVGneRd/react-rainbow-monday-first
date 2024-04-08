@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = normalizeDate;
+exports["default"] = normalizeDate;
 
 function normalizeDate(date) {
-    if (typeof date === 'string') {
-        return new Date(date);
-    }
+  if (typeof date === 'string') {
+    return new Date(date);
+  }
 
-    return date || new Date();
+  return date || new Date();
 }

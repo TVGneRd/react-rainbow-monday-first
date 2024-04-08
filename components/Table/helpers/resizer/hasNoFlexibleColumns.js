@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = hasNoFlexibleColumns;
+exports["default"] = hasNoFlexibleColumns;
 
 function hasNoFlexibleColumns(widthsMeta) {
-    return widthsMeta.totalFlexibleColumns === 0;
+  return widthsMeta.totalFlexibleColumns === 0;
 }

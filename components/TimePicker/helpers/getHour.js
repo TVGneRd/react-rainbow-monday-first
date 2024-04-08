@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getHour;
+exports["default"] = getHour;
 
 function getHour(value) {
-    if (value) {
-        return value.split(':')[0];
-    }
+  if (value) {
+    return value.split(':')[0];
+  }
 
-    return '';
+  return '';
 }

@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = usePreviousIndex;
+exports["default"] = usePreviousIndex;
 
-var _react = require('react');
+var _react = require("react");
 
 function usePreviousIndex(focusedIndex) {
-    var ref = (0, _react.useRef)();
-    (0, _react.useEffect)(function() {
-        ref.current = focusedIndex;
-    });
-    return ref.current;
+  var ref = (0, _react.useRef)();
+  (0, _react.useEffect)(function () {
+    ref.current = focusedIndex;
+  });
+  return ref.current;
 }

@@ -1,14 +1,12 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isChildRegistered;
+exports["default"] = isChildRegistered;
 
 function isChildRegistered(name, activeChildren) {
-    return (
-        activeChildren.findIndex(function(child) {
-            return child.name === name;
-        }) !== -1
-    );
+  return activeChildren.findIndex(function (child) {
+    return child.name === name;
+  }) !== -1;
 }

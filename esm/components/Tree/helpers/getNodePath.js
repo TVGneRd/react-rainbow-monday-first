@@ -1,3 +1,3 @@
 export default function getNodePath(nodePath) {
-    return nodePath.join('.');
+  return nodePath.join('.');
 }

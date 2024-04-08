@@ -1,37 +1,37 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = CardBoddy;
+exports["default"] = CardBoddy;
 
-var _react = _interopRequireDefault(require('react'));
+var _react = _interopRequireDefault(require("react"));
 
-var _propTypes = _interopRequireDefault(require('prop-types'));
+var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _Spinner = _interopRequireDefault(require('../Spinner'));
+var _Spinner = _interopRequireDefault(require("../Spinner"));
 
 function CardBoddy(_ref) {
-    var isLoading = _ref.isLoading,
-        children = _ref.children;
+  var isLoading = _ref.isLoading,
+      children = _ref.children;
 
-    if (isLoading) {
-        return _react['default'].createElement(_Spinner['default'], {
-            isVisible: isLoading,
-            size: 'small',
-        });
-    }
+  if (isLoading) {
+    return _react["default"].createElement(_Spinner["default"], {
+      isVisible: isLoading,
+      size: "small"
+    });
+  }
 
-    return children;
+  return children;
 }
 
 CardBoddy.propTypes = {
-    isLoading: _propTypes['default'].bool,
-    children: _propTypes['default'].node,
+  isLoading: _propTypes["default"].bool,
+  children: _propTypes["default"].node
 };
 CardBoddy.defaultProps = {
-    isLoading: null,
-    children: null,
+  isLoading: null,
+  children: null
 };

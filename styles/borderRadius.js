@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.BORDER_RADIUS_SQUARE = exports.BORDER_RADIUS_SEMI_SQUARE = exports.BORDER_RADIUS_SEMI_ROUNDED = exports.BORDER_RADIUS_4 = exports.BORDER_RADIUS_3 = exports.BORDER_RADIUS_2 = exports.BORDER_RADIUS_1 = void 0;
 var BORDER_RADIUS_1 = '0.875rem';

@@ -1,58 +1,54 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = filterCountries;
+exports["default"] = filterCountries;
 
 function filterCountries(query, countries, country) {
-    if (query === '' || query === '+') {
-        var _filteredCountries = countries.filter(function(value) {
-            return value.isoCode !== country.isoCode;
-        });
+  if (query === '' || query === '+') {
+    var _filteredCountries = countries.filter(function (value) {
+      return value.isoCode !== country.isoCode;
+    });
 
-        _filteredCountries.unshift(country);
+    _filteredCountries.unshift(country);
 
-        return _filteredCountries;
+    return _filteredCountries;
+  }
+
+  var queryToLower = query.toLowerCase();
+  var isFilteredCountry = false;
+  var filteredCountries = countries.filter(function (value) {
+    if (!isNaN(query)) {
+      var index = value.countryCode.toString().indexOf(queryToLower);
+
+      if (index === 0 || index === 1) {
+        if (value.isoCode === country.isoCode) {
+          isFilteredCountry = true;
+          return false;
+        }
+
+        return true;
+      }
+
+      return false;
     }
 
-    var queryToLower = query.toLowerCase();
-    var isFilteredCountry = false;
-    var filteredCountries =
-        countries.filter(function(value) {
-            if (!isNaN(query)) {
-                var index = value.countryCode.toString().indexOf(queryToLower);
+    if (value.country.toLowerCase().indexOf(queryToLower) !== -1 || value.isoCode.indexOf(queryToLower) !== -1) {
+      if (value.isoCode === country.isoCode) {
+        isFilteredCountry = true;
+        return false;
+      }
 
-                if (index === 0 || index === 1) {
-                    if (value.isoCode === country.isoCode) {
-                        isFilteredCountry = true;
-                        return false;
-                    }
-
-                    return true;
-                }
-
-                return false;
-            }
-
-            if (
-                value.country.toLowerCase().indexOf(queryToLower) !== -1 ||
-                value.isoCode.indexOf(queryToLower) !== -1
-            ) {
-                if (value.isoCode === country.isoCode) {
-                    isFilteredCountry = true;
-                    return false;
-                }
-
-                return true;
-            }
-
-            return false;
-        }) || [];
-
-    if (isFilteredCountry) {
-        filteredCountries.unshift(country);
+      return true;
     }
 
-    return filteredCountries;
+    return false;
+  }) || [];
+
+  if (isFilteredCountry) {
+    filteredCountries.unshift(country);
+  }
+
+  return filteredCountries;
 }

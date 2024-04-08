@@ -1,39 +1,33 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-var _reactHooks = require('@testing-library/react-hooks');
+var _reactHooks = require("@testing-library/react-hooks");
 
-var _useRangeEndDate = _interopRequireDefault(require('../useRangeEndDate'));
+var _useRangeEndDate = _interopRequireDefault(require("../useRangeEndDate"));
 
-describe('useRangeEndDate', function() {
-    it('should return true', function() {
-        var date = new Date(2019, 0, 15);
-        var range = [new Date(2019, 0, 1), new Date(2019, 0, 15)];
+describe('useRangeEndDate', function () {
+  it('should return true', function () {
+    var date = new Date(2019, 0, 15);
+    var range = [new Date(2019, 0, 1), new Date(2019, 0, 15)];
 
-        var _renderHook = (0, _reactHooks.renderHook)(function() {
-                return (0, _useRangeEndDate['default'])(date, range);
-            }),
-            result = _renderHook.result;
+    var _renderHook = (0, _reactHooks.renderHook)(function () {
+      return (0, _useRangeEndDate["default"])(date, range);
+    }),
+        result = _renderHook.result;
 
-        expect(result.current).toBe(true);
+    expect(result.current).toBe(true);
+  });
+  it('should return false', function () {
+    var date = new Date(2019, 0, 12);
+    var ranges = [null, undefined, [], [new Date(2019, 0, 17)], [new Date(2019, 0, 1), new Date(2019, 0, 15)]];
+    ranges.forEach(function (range) {
+      var _renderHook2 = (0, _reactHooks.renderHook)(function () {
+        return (0, _useRangeEndDate["default"])(date, range);
+      }),
+          result = _renderHook2.result;
+
+      expect(result.current).toBe(false);
     });
-    it('should return false', function() {
-        var date = new Date(2019, 0, 12);
-        var ranges = [
-            null,
-            undefined,
-            [],
-            [new Date(2019, 0, 17)],
-            [new Date(2019, 0, 1), new Date(2019, 0, 15)],
-        ];
-        ranges.forEach(function(range) {
-            var _renderHook2 = (0, _reactHooks.renderHook)(function() {
-                    return (0, _useRangeEndDate['default'])(date, range);
-                }),
-                result = _renderHook2.result;
-
-            expect(result.current).toBe(false);
-        });
-    });
+  });
 });

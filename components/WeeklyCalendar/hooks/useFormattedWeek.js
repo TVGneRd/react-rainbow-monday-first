@@ -1,19 +1,16 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = useFormattedWeek;
+exports["default"] = useFormattedWeek;
 
-var _react = require('react');
+var _react = require("react");
 
-var _helpers = require('../helpers');
+var _helpers = require("../helpers");
 
 function useFormattedWeek(week, locale) {
-    return (0, _react.useMemo)(
-        function() {
-            return (0, _helpers.getFormattedWeek)(week, locale);
-        },
-        [locale, week],
-    );
+  return (0, _react.useMemo)(function () {
+    return (0, _helpers.getFormattedWeek)(week, locale);
+  }, [locale, week]);
 }

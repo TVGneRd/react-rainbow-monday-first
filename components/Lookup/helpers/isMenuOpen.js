@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isMenuOpen;
+exports["default"] = isMenuOpen;
 
 function isMenuOpen(options, isFocused) {
-    return isFocused && Array.isArray(options) && !!options.length;
+  return isFocused && Array.isArray(options) && !!options.length;
 }

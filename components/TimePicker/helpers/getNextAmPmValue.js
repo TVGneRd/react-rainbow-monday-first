@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = getNextAmPmValue;
+exports["default"] = getNextAmPmValue;
 
 function getNextAmPmValue(value) {
-    if (value === 'AM' || value === undefined) {
-        return 'PM';
-    }
+  if (value === 'AM' || value === undefined) {
+    return 'PM';
+  }
 
-    return 'AM';
+  return 'AM';
 }

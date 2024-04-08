@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.PADDING_X_SMALL = exports.PADDING_X_LARGE = exports.PADDING_XX_SMALL = exports.PADDING_XX_LARGE = exports.PADDING_SMALL = exports.PADDING_MEDIUM = exports.PADDING_LARGE = void 0;
 var PADDING_XX_SMALL = '0.25rem';

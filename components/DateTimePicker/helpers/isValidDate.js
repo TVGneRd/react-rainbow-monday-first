@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = isValidDate;
+exports["default"] = isValidDate;
 
 function isValidDate(date) {
-    return Object.prototype.toString.call(date) === '[object Date]' && !isNaN(date.getHours());
+  return Object.prototype.toString.call(date) === '[object Date]' && !isNaN(date.getHours());
 }

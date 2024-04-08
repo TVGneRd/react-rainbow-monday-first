@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = void 0;
+exports["default"] = void 0;
 
 var isButtonDisabled = function isButtonDisabled(isMinOrMax, disable, readOnly) {
-    if (isMinOrMax || disable || readOnly) {
-        return true;
-    }
+  if (isMinOrMax || disable || readOnly) {
+    return true;
+  }
 
-    return false;
+  return false;
 };
 
 var _default = isButtonDisabled;
-exports['default'] = _default;
+exports["default"] = _default;

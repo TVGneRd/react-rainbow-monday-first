@@ -1,7 +1,7 @@
 export default function isOptionChecked(option, currentValue) {
-    if (!currentValue) {
-        return false;
-    }
+  if (!currentValue) {
+    return false;
+  }
 
-    return !option.disabled && option.value === currentValue;
+  return !option.disabled && option.value === currentValue;
 }

@@ -6,26 +6,21 @@ import MarkerIcon from './markerIcon';
 import StyledIcon from './styled/icon';
 var ICON_DESCRIPTION = 'marker icon';
 export default function Icon(_ref) {
-    var icon = _ref.icon;
+  var icon = _ref.icon;
 
-    if (icon) {
-        return React.createElement(StyledIconContainer, null, icon);
-    }
+  if (icon) {
+    return React.createElement(StyledIconContainer, null, icon);
+  }
 
-    return React.createElement(
-        StyledIcon,
-        {
-            title: ICON_DESCRIPTION,
-        },
-        React.createElement(MarkerIcon, null),
-        React.createElement(AssistiveText, {
-            text: ICON_DESCRIPTION,
-        }),
-    );
+  return React.createElement(StyledIcon, {
+    title: ICON_DESCRIPTION
+  }, React.createElement(MarkerIcon, null), React.createElement(AssistiveText, {
+    text: ICON_DESCRIPTION
+  }));
 }
 Icon.propTypes = {
-    icon: PropTypes.node,
+  icon: PropTypes.node
 };
 Icon.defaultProps = {
-    icon: null,
+  icon: null
 };

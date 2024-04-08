@@ -1,32 +1,24 @@
-'use strict';
+"use strict";
 
-var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-Object.defineProperty(exports, '__esModule', {
-    value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = EnumerableCell;
+exports["default"] = EnumerableCell;
 
-var _react = _interopRequireDefault(require('react'));
+var _react = _interopRequireDefault(require("react"));
 
-var _cellContainer = _interopRequireDefault(require('./styled/cellContainer'));
+var _cellContainer = _interopRequireDefault(require("./styled/cellContainer"));
 
-var _cellContent = _interopRequireDefault(require('./styled/cellContent'));
+var _cellContent = _interopRequireDefault(require("./styled/cellContent"));
 
-var _enumerable = _interopRequireDefault(require('./styled/enumerable'));
+var _enumerable = _interopRequireDefault(require("./styled/enumerable"));
 
 function EnumerableCell() {
-    return _react['default'].createElement(
-        _cellContainer['default'],
-        {
-            role: 'gridcell',
-            tabIndex: -1,
-            hideBorderRight: true,
-        },
-        _react['default'].createElement(
-            _cellContent['default'],
-            null,
-            _react['default'].createElement(_enumerable['default'], null),
-        ),
-    );
+  return _react["default"].createElement(_cellContainer["default"], {
+    role: "gridcell",
+    tabIndex: -1,
+    hideBorderRight: true
+  }, _react["default"].createElement(_cellContent["default"], null, _react["default"].createElement(_enumerable["default"], null)));
 }

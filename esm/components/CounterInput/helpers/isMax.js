@@ -1,11 +1,11 @@
 import getValue from './getValue';
 
 var isMax = function isMax(number, step, max) {
-    if (getValue(Number(number)) + step > max) {
-        return true;
-    }
+  if (getValue(Number(number)) + step > max) {
+    return true;
+  }
 
-    return false;
+  return false;
 };
 
 export default isMax;

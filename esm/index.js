@@ -103,8 +103,6 @@ export { default as ZoomableImage } from './components/ZoomableImage';
 export { default as attachThemeAttrs } from './styles/helpers/attachThemeAttrs';
 export { default as withDebounce } from './libs/hocs/withDebounce';
 export { default as withRainbowTheme } from './libs/hocs/withRainbowTheme';
-export {
-    default as useDefaultTooltipConnector,
-} from './components/InternalTooltip/hooks/useDefaultTooltipConnector';
+export { default as useDefaultTooltipConnector } from './components/InternalTooltip/hooks/useDefaultTooltipConnector';
 export { default as useLocale } from './libs/hooks/useLocale';
 export { default as useTheme } from './libs/hooks/useTheme';
