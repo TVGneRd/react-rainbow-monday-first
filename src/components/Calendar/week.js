@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { addDays, shouldDateBeSelected, isDateWithinRange, isSameDay } from './helpers';
+import React, { useContext } from 'react';
 import { CalendarContext } from './context';
 import Day from './day';
+import { addDays, isDateWithinRange, isSameDay, shouldDateBeSelected } from './helpers';
 
 export default function Week(props) {
     const {
@@ -16,8 +16,9 @@ export default function Week(props) {
         onChange,
     } = props;
     const { currentRange, selectionType, selectedRange } = useContext(CalendarContext);
+    const toEuropeDaysWeek = day => (day === 0 ? 6 : day - 1);
+    const daysDiff = toEuropeDaysWeek(endDate.getDay()) - toEuropeDaysWeek(startDate.getDay()) + 1;
 
-    const daysDiff = endDate.getDay() - startDate.getDay() + 1;
     const days = Array.from(Array(daysDiff), (item, index) => {
         const date = addDays(startDate, index);
         return (

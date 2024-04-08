@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { addDays, getLastDayMonth } from './helpers';
 import Week from './week';
 
@@ -8,8 +8,9 @@ export default function Month(props) {
 
     const date = new Date(firstDayMonth);
     const lastDayMonth = getLastDayMonth(firstDayMonth);
-    const dayOfWeek = date.getDay();
-    const totalWeeks = (lastDayMonth.getDate() + dayOfWeek + 6 - lastDayMonth.getDay()) / 7;
+    const toEuropeDaysWeek = day => (day === 0 ? 6 : day - 1);
+    const dayOfWeek = toEuropeDaysWeek(date.getDay());
+    const totalWeeks = (lastDayMonth.getDate() + dayOfWeek + 7 - lastDayMonth.getDay()) / 7;
     const week = addDays(date, -dayOfWeek);
 
     const weeks = Array.from(Array(totalWeeks), (item, index) => {
